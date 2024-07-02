@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         die.style.transform = 'rotateY(180deg)';
         die2.style.transform = 'rotateY(180deg)';
         setTimeout(() => {
-            die.src = `/images/${result}-die.png`;
-            die2.src = `/images/${result2}-die.png`;
+            die.src = `images/${result}-die.png`;
+            die2.src = `images/${result2}-die.png`;
             die.style.transform = 'rotateY(0deg)';
             die2.style.transform = 'rotateY(0deg)';
         }, 500);
