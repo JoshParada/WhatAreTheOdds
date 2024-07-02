@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     const images = {
-        heads: '/images/coin-heads.png',  // Path to heads image
-        tails: '/images/coin-tails.png'   // Path to tails image
+        heads: 'images/coin-heads.png',  // Path to heads image
+        tails: 'images/coin-tails.png'   // Path to tails image
     };
 
     flipBtn.addEventListener('click', () => {
