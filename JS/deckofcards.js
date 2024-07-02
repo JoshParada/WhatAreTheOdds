@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 cards.push({
                     value: value,
                     suit: suit,
-                    imageUrl: `/images/${value}_of_${suit}.png`  // Path to card images
+                    imageUrl: `images/${value}_of_${suit}.png`  // Path to card images
                 });
             });
         });
     }
 
     function shuffleDeck() {
-        cardImage.src = '/images/back_of_card.png';
+        cardImage.src = 'images/back_of_card.png';
         for (let i = cards.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [cards[i], cards[j]] = [cards[j], cards[i]];
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentIndex < cards.length) {
             cardImage.src = cards[currentIndex].imageUrl;
         } else {
-            cardImage.src = '/images/back_of_card.png';  // Path to the back of the card image
+            cardImage.src = 'images/back_of_card.png';  // Path to the back of the card image
         }
     }
 
